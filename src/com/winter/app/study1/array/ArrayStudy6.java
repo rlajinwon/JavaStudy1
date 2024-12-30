@@ -1,4 +1,6 @@
 package com.winter.app.study1.array;
+import java.util.Arrays;
+import java.util.Collections;
 
 import java.util.Scanner;
 
@@ -37,16 +39,24 @@ public class ArrayStudy6 {
 		
 		
 		
-		}
-		for(int i=0; i<names.length; i++) {
-			for(int j=i+1; j<names.length; j++) {
-				if(total[i] < total[j]) { //내림차순
-					int tmp = total[i];
-					total[i] = total[j];
-					total[j] = tmp;
-				}
-			}
-		}
+		}     for(int i=0;i<names.length-1;i++) {
+            for(int j=0;j<names.length-1-i;j++){
+                if(total[j]<total[j+1]) {
+                    int tmp=total[j];    
+                    total[j]=total[j+1];
+                    total[j+1]=tmp;
+                    String temp = names[j];
+                    names[j]=names[j+1];
+                    names[j+1]=temp;
+                    
+                    
+          
+                }    
+            }
+        }    
+		
+		
+		
 	
 		// 총점 기준으로 내림차순 정렬 
 		

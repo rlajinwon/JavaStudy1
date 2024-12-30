@@ -9,11 +9,11 @@ public class ArrayStudy4 {
 	public static void main(String[] args) {
 		
 		
-		int [] nums = {6,9,7,4,1};
+		int [] nums = {5,9,7,8,3};           //
 		
-		for(int i=0; i<nums.length-1; i++) {
+		for(int i=0; i<nums.length-1; i++) {      // 0 < 4     0 1 2 3
 			System.out.println(i);
-			for(int j =i+1;j<5;j++) {
+ 			for(int j =i+1;j<5;j++) {       // 1 < 5   ++     1 2 3 4
 				System.out.print(j);
 				int tmp = nums[i];
 				if(nums[i]<nums[j]) {
@@ -22,15 +22,16 @@ public class ArrayStudy4 {
 
 				
 			}
-				System.out.println();
+			System.out.println();
+		}
 			
 		}
-			System.out.println("==============");
-			for(i=0; i<nums.length;i++) {
-			System.out.println(nums[i]);
-		}
-		
-		}
+			
+		System.out.println("==============");
+		for(int i=0; i<nums.length; i++) {
+		System.out.println(nums[i]);
+		}	
+	
 		
 	}
 }

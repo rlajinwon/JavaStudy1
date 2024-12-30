@@ -11,7 +11,6 @@ public class ArrayStudy5 {
 		Random random = new Random();
 		int [] nums = new int[6];
 		
-		int idx = 0;
 		
 		for(int i=0; i<nums.length; i++) {
 			// i = 0 , 0
@@ -27,18 +26,31 @@ public class ArrayStudy5 {
 				if(nums[i]==nums[j]) {
 					i--;
 					break;
-					
-					
+							
 				}
-				
 					
 				
 			}
-			
-			
 		
 		
 		}
+		
+		for(int i=0; i <nums.length; i++) {
+			for(int j = i +1; j<nums.length; j++) {
+				if(nums[i]>nums[j]) {
+					int temp = nums[i];
+					nums[i] = nums[j];
+					nums[j] = temp;
+					
+				}
+			}
+			
+		}
+		
+		
+		
+		
+		
 		for(int i=0;i<6; i++) {
 			System.out.println(nums[i]);
 		
