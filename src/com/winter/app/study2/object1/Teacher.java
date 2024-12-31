@@ -4,6 +4,6 @@ public class Teacher {
 
 	String name;
 	String kind;
-	Student student;
+	Student[] students;
 	
 }

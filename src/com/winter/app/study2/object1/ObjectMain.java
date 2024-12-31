@@ -21,7 +21,6 @@ public class ObjectMain {
 		
 		tc.name = "철수";
 		tc.kind = "국어";
-		tc.student = st;
 		
 		//
 		Student [] students = new Student[5];
@@ -30,15 +29,16 @@ public class ObjectMain {
 		System.out.println(students[0].name);
 
 		
-		for(int i=0; i<100; i++) {
-		st	= new Student();
+		for(int i=0; i<5; i++) {
+		students[i]	= new Student();
 		}
 		
 		
+		tc.students = students;
 		
 		
 		System.out.println(tc.name);
-		System.out.println(tc.student.name);
+		System.out.println(tc.students[0].name);
 		
 		
 		
