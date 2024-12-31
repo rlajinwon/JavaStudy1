@@ -33,6 +33,10 @@ public class ArrayStudy7 {
         ars[1] = new int[2];
         
 		System.out.println(ars[0][1]);
-	
+
+		//test branch에서 작업한 내용
+		
+		
+		
 	}
 }
