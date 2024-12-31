@@ -22,7 +22,7 @@ public class SchoolController {
 		
 
 	while(check) {
-		System.out.println("(1)학생정보입력 (2)학생정보출력 (3)학생번호검색 (4)프로그램 종료");
+		System.out.println("(1)학생정보입력 (2)학생정보출력 (3)학생번호검색 (4)학생정보삭제  (5)프로그램 종료");
 		int select = sc.nextInt();
 		if(select == 1) {
 		schoolMates = sf.make(schoolMates);
