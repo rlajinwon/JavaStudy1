@@ -6,8 +6,7 @@ public class SchoolMate {
 	
 	String name;
 	int num;
-	int kor,eng,math,total;
-	double avg;
+	int kor,eng,math,total,avg;
 	
 	
 	

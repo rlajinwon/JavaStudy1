@@ -27,9 +27,10 @@ public class SchoolMateFactory {
 		System.out.println("수학:");
 		sm.math = sc.nextInt();
 		
-		sm.total = sm.kor+sm.eng+sm.math;
+		sm.total = sm.kor+sm.eng+sm.math;	
+		sm.avg = sm.total/3;
 		
-		sm.avg = sm.total/3.0;
+		
 		
 		// 1. +1 된 새로운 배열 생성
 		// 2. 기존의 값을 새로운배열로 값을 저장
@@ -52,4 +53,33 @@ public class SchoolMateFactory {
 		
 		
 	}
+	
+	public SchoolMate find(SchoolMate[] schoolMastes) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("학생 번호입력:");
+		int nums = sc.nextInt();
+		SchoolMate schoolMate = null;
+		for(int i=0; i<schoolMastes.length;i++) {
+			
+			if(nums == schoolMastes[i].num) {
+				schoolMate = schoolMastes[i];
+				break;
+				
+			}
+			
+		
+		
+		
+		}
+		
+		return schoolMate;
+		
+		
+		
+		
+		
+	
+	
+	}
+	
 }
