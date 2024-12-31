@@ -1,15 +1,17 @@
 package com.winter.app.study1.array;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class ArrayStudy5 {
 
 	public static void main(String[] args) {
 		
-		//로또 번호 6개 1-45
 		
+		//로또 번호 6개 1-45
 		Random random = new Random();
 		int [] nums = new int[6];
+		
 		
 		
 		for(int i=0; i<nums.length; i++) {
@@ -35,6 +37,7 @@ public class ArrayStudy5 {
 		
 		}
 		
+		
 		for(int i=0; i <nums.length; i++) {
 			for(int j = i +1; j<nums.length; j++) {
 				if(nums[i]>nums[j]) {
@@ -49,10 +52,9 @@ public class ArrayStudy5 {
 		
 		
 		
-		
-		
 		for(int i=0;i<6; i++) {
 			System.out.println(nums[i]);
+			
 		
 		}
 		
