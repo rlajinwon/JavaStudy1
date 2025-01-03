@@ -1,9 +1,7 @@
 package com.winter.app.controls;
 
 import java.util.Scanner;
-
 import com.winter.app.units.Character;
-import com.winter.app.units.Monster;
 import com.winter.app.weapons.Sword;
 
 public class GameControl {
@@ -20,18 +18,18 @@ public class GameControl {
 	
 	
 	public void start() {
-		Character ch = new Character();
+		Character character = new Character();
 		System.out.println("캐릭터의 이름 입력:");
 		//String n = sc.next();
-		ch.setName(sc.next());
+		character.setName(sc.next());
 		
 		
 		Sword sword = new Sword();
 		
-		ch.setSword(sword);
+		character.setSword(sword);
 		
-		gs.fight(ch);
-		
+	
+		gs.fight(character);
 		
 		
 		
